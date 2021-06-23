@@ -1,0 +1,6 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/loading_screen.css" />
+	</styles>
+	<Panel class="AddonLoadingRoot">
+		<Panel id="seq" >
