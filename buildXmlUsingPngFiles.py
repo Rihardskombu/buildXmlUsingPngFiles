@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-#print(os.getcwd()) # current dir
     
 begintxt=open("begin.txt", "r") #open existing file
 endtxt=open("end.txt", "r") #open existing file
@@ -17,8 +16,8 @@ if begintxt.mode == 'r' and endtxt.mode == 'r':
 
     for filename in os.listdir(directory):
         if filename.endswith(".png"):
-            xmlfile.write('\n' + '\t\t\t' + '<Image id="seq_bg" class="SeqBg" src="file://{images}/loadingscreens/' + os.path.join(filename) + '" />' ) #print(os.path.join(directory, filename))
+            xmlfile.write('\n' + '\t\t\t' + '<Image id="seq_bg" class="SeqBg" src="file://{images}/loadingscreens/' + os.path.join(filename) + '" />' )
     xmlfile.write('\n')
     
-    xmlfile.write( endtxt.read()  ) #appent end
+    xmlfile.write( endtxt.read()  ) #append end
     xmlfile.close()     
